@@ -33,11 +33,7 @@ $(document).ready(function () {
             //console.log("Cards", data);
             renderCards(data)
 
-            //$(".carousel").carousel();
-            $('.carousel').carousel({
-                //fullWidth: true,
-                indicators: true
-            });
+            $('.carousel').carousel();
 
         });
     });
@@ -74,7 +70,8 @@ $(document).ready(function () {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <div class="front row valign-wrapper center-align">
+                    <div class="front valign-wrapper center-align">
+                    <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
                     <div class="back center-align valign-wrapper">
@@ -102,10 +99,7 @@ $(document).ready(function () {
             console.log("Cards", data);
             renderCards(data)
 
-            $('.carousel').carousel({
-                //fullWidth: true,
-                indicators: true
-            });
+            $('.carousel').carousel();
 
         });
     });
@@ -251,7 +245,8 @@ function reRender(subject) {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <div class="front row valign-wrapper center-align">
+                    <p>1</p>
+                    <div class="front valign-wrapper center-align">
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
                     <div class="back center-align valign-wrapper">
@@ -263,10 +258,7 @@ function reRender(subject) {
             console.log("A:", cardArray[i].answer)
             $("#cardCarousel").append(carouselCard);
         }
-        $('.carousel').carousel({
-            //fullWidth: true,
-            indicators: true
-        });
+        $('.carousel').carousel();
 
     });
 }
