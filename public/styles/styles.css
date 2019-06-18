@@ -79,7 +79,6 @@ footer {
   -webkit-transition: all 600ms;
   transition: all 600ms;
   z-index: 20;
-  flex-wrap: wrap;
   
 }
 
@@ -112,9 +111,9 @@ label:hover .card {
   box-shadow: 0 20px 20px rgba(50,50,50,.2);
 }
 
-/* input {
-  /* display: none; 
-}*/
+input {
+  display: none; 
+}
 
 
 :checked + .card {
