@@ -1,5 +1,6 @@
 $(document).ready(function () {
     // initialize modals
+    let subject = "";
     $('#updateModal').modal();
     $("#deleteModal").modal();
     $("#card-icons").hide();
@@ -28,7 +29,7 @@ $(document).ready(function () {
         $(".intro").hide();
         $("#cardCarousel").empty();
         
-        let subject = $(this).data("id");
+        subject = $(this).data("id");
         console.log("Subject:", subject)
 
         $.get("/api/cards/" + subject, function (data) {
@@ -217,7 +218,7 @@ $(document).ready(function () {
                         // show success message  
                         M.toast({ html: 'Card Deleted!', classes: 'rounded delete-toast', displayLength: 1500, outDuration: 600 });
                         $("#deleteModal").modal('close');
-                        let subject = "HTML";
+                        //let subject = "HTML";
                         reRender(subject);
                     }
                 });
@@ -246,7 +247,7 @@ $(document).ready(function () {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                <div class="front valign-wrapper center-align">
+                <div class="front valign-wrapper center-align blue-text text-lighten-3">
                 <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
