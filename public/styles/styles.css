@@ -1,49 +1,9 @@
-
 body {
   background-color: black;
 }
-/* .flip-container {
-  perspective: 1000px;
-} */
-/* flip the pane when hovered */
-/* .flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-.flip-container,
-.front,
-.back {
-  width: 100%;
-  height: auto;
-} */
-/* flip speed goes here */
-/* .flipper {
-  transition: 0.9s;
-  transform-style: preserve-3d;
-  position: relative;
-} */
-/* hide back of pane during swap */
-/* .front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-/* front pane, placed above back */
-/* .front {
-  z-index: 2;
-  /* for firefox 31 */
-  /* transform: rotateY(0deg);
-} */
-/* back, initially hidden pane */
-/* .back {
-  transform: rotateY(180deg);
-} */ */
-header,
-main,
-footer {
-  padding-left: 300px;
+
+header, #main, footer {
+  padding-left: 250px !important
 }
 @media only screen and (max-width : 992px) {
   header,
@@ -186,6 +146,11 @@ label:hover :checked + .card {
 .fa-pencil-alt:hover, .fa-times-circle:hover {
   color: rgb(211, 128, 131);
 }
+
+.fa-sticky-note {
+  float: right;
+  color: green;
+}
 /* .fa-pencil-alt {
   position: relative;
   left: 80%;
@@ -212,4 +177,24 @@ label:hover :checked + .card {
 
 .delete-toast {
   background-color: rgb(238, 64, 64);
+}
+
+.sidenav-fixed{
+  width: 250px;
+}
+
+
+.header :hover{
+  color: rgb(50, 144, 233);
+}
+
+.header {
+  padding-left: 2rem;
+}
+  
+}
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
 }

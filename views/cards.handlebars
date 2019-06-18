@@ -1,14 +1,13 @@
 <header>
     <nav class="top-nav" style="height: 10rem">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="row">
-                    <div class="col s12 m10">
-                        <h1 class="header">FlashCodes</h1>
-                    </div>
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12 left-align">
+                    <h1 class="header"><a href="/">FlashCodes</a></h1>
                 </div>
             </div>
         </div>
+
 
         {{!-- Validation MODAL --}}
         <div class="modal fade" id="createModal" tabindex="-1" role="dialog">
@@ -20,7 +19,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="input-field col s10">
+                            <div class="input-field col s12">
                                 <label>Choose the Card Category</label><br>
                                 <select class="browser-default" id="category-menu-create">
                                     <option value="" disabled selected>Choose your option</option>
@@ -68,7 +67,7 @@
                                 </button>
                             </div>
                             <div class="col-6">
-                                <span class="red-text" id="error-create" float="right"></span> 
+                                <span class="red-text" id="error-create" float="right"></span>
                             </div>
                         </div>
 
@@ -141,8 +140,8 @@
                             </button>
                         </div>
                         <div class="col-6">
-                                <span class="red-text" id="error-update" float="right"></span> 
-                            </div>
+                            <span class="red-text" id="error-update" float="right"></span>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="modal-close waves-effect waves-green"
@@ -178,17 +177,12 @@
 
         <ul id="slide-out" class="sidenav sidenav-fixed">
             <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="/brain.jpg">
-                    </div>
-                    <a href="#name"><span class="pink-text name">John Doe</span></a>
-                </div>
+                <a href="#name"><span class="pink-text name">John Doe</span></a>
             </li>
             <li>
                 <div class="divider"></div>
             </li>
-            <li class="addMore"><a href="#!">Create Cards!</a></li>
+            <li class="addMore"><a href="#!">Create Cards!<i class="large material-icons teal-text pulse">add_to_photos</i></a></li>
             {{!-- <li>
                 <div class="divider"></div>
             </li> --}}
@@ -214,11 +208,9 @@
 </header>
 <!-- Page Layout here -->
 <div id="main" class="row">
-    <!-- Side navigation panel -->
-    <div class="col s2">
-    </div>
+
     <!-- Main Content -->
-    <div class="col s10 center-align intro" display="show">
+    <div class="col s12 center-align flow-text intro" display="show">
         <h1 class="blue-text" id="welcome">Welcome to <strong>FlashCodes</strong>!</h1>
         <h2 class="white-text"> Let's LEARN! <br> Choose a subject in the left menu to review existing FlashCodes, or
             select your favorite author to learn what they know!
@@ -226,7 +218,7 @@
         </h2>
 
     </div>
-    <div class="col s10 center-align holder">
+    <div class="col s12 center-align holder">
         <div class="carousel center-align" id="cardCarousel" data-indicators="true"></div>
         <div class="row">
             <div id="card-icons" class="col s12 center-align">
