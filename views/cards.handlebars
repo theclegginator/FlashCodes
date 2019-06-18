@@ -11,6 +11,79 @@
         </div>
 
         {{!-- Validation MODAL --}}
+        <div class="modal fade" id="createModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:black;">Create New FlashCode</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="input-field col s10">
+                                <label>Choose the Card Category</label><br>
+                                <select class="browser-default" id="category-menu-create">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSS">CSS</option>
+                                    <option value="Javascript">Javascript</option>
+                                    <option value="jQuery">jQuery</option>
+                                    <option value="Timers">Timers</option>
+                                    <option value="AJAX">AJAX</option>
+                                    <option value="Firebase">Firebase</option>
+                                    <option value="NodeJS">NodeJS</option>
+                                    <option value="Constructors">Constructors</option>
+                                    <option value="MySQL">MySQL</option>
+                                    <option value="Express">Express</option>
+                                    <option value="Handlebars">Handlebars</option>
+                                    <option value="Sequelize">Sequelize</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label>Question</label><br>
+                                <textarea id="question-text-create" class="materialize-textarea validate"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label>Answer</label><br>
+                                <textarea id="answer-description-create" class="materialize-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="input-field col s12">
+                                <label>Card Author</label><br>
+                                <textarea id="author-text-create" type="text" class="materialize-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn waves-effect waves-light" type="submit" name="action"
+                                    id="createSubmit">Create
+                                    {{!-- <i class="material-icons right" style="font-size:20px;">send</i> --}}
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <span class="red-text" id="error-create" float="right"></span> 
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close waves-effect waves-green"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        {{!-- Validation MODAL --}}
         <div class="modal fade" id="updateModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -22,7 +95,7 @@
                         <div class="row">
                             <div class="input-field col s10">
                                 <label>Choose the Card Category</label><br>
-                                <select class="browser-default" id="category-menu">
+                                <select class="browser-default" id="category-menu-create">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="HTML">HTML</option>
                                     <option value="CSS">CSS</option>
@@ -62,10 +135,14 @@
                         </div>
                         <div class="row">
 
-                            <button class="btn waves-effect waves-light" type="submit" name="action" id="updateSubmit">UPDATE
+                            <button class="btn waves-effect waves-light" type="submit" name="action"
+                                id="updateSubmit">UPDATE
                                 {{!-- <i class="material-icons right" style="font-size:20px;">send</i> --}}
                             </button>
                         </div>
+                        <div class="col-6">
+                                <span class="red-text" id="error-update" float="right"></span> 
+                            </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="modal-close waves-effect waves-green"
@@ -74,26 +151,30 @@
                 </div>
             </div>
         </div>
-        {{!-- End of Validation MODAL --}} 
+        {{!-- End of Validation MODAL --}}
 
         {{!-- Confirm Deletion MODAL --}}
         <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" style="color:black;">Wait! Are you sure you want to <b>permanently delete</b> this card?</h5>
+                        <h5 class="modal-title" style="color:black;">Wait! Are you sure you want to <b>permanently
+                                delete</b> this card?</h5>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div>
-                            <button class="btn waves-effect waves-light" type="submit" name="action" id="confirmDeleteButton" style="background-color:rgb(245, 40, 40); margin-right:10px;">DELETE</button>
-                            <button class="btn waves-effect waves-light" name="action" id="cancelDelete" style="background-color:rgb(184, 184, 184); color: black;">UH, NEVER MIND</button>
+                            <button class="btn waves-effect waves-light" type="submit" name="action"
+                                id="confirmDeleteButton"
+                                style="background-color:rgb(245, 40, 40); margin-right:10px;">DELETE</button>
+                            <button class="btn waves-effect waves-light" name="action" id="cancelDelete"
+                                style="background-color:rgb(184, 184, 184); color: black;">UH, NEVER MIND</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{!-- End of Validation MODAL --}} 
+        {{!-- End of Validation MODAL --}}
 
         <ul id="slide-out" class="sidenav sidenav-fixed">
             <li>
@@ -107,7 +188,7 @@
             <li>
                 <div class="divider"></div>
             </li>
-            <li class="addMore"><a href="/add">Create Cards!</a></li>
+            <li class="addMore"><a href="#!">Create Cards!</a></li>
             {{!-- <li>
                 <div class="divider"></div>
             </li> --}}
@@ -182,6 +263,7 @@
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <script src="/js/cards.js"></script>
+    <script src="/js/add.js"></script>
     {{!-- <script>
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -195,13 +277,11 @@
 
 
 
-        {
-            {
-            !-- < script src = "https://code.jquery.com/jquery.js" ></script> --}}
-    <script>
+
+        <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
-            });
+var instances = M.Sidenav.init(elems);
+});
 
     </script>
