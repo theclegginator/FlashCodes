@@ -74,7 +74,7 @@ $(document).ready(function () {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <div class="front row valign-wrapper center-align">
+                    <div class="front valign-wrapper center-align">
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
                     <div class="back center-align valign-wrapper">
@@ -172,7 +172,7 @@ $("#updateSubmit").on("click", function () {
                 answer: $("#answer-description").val()
             }
 
-            if (!currentCard.question || !currentCard.author || !currentCard.answer) {
+            if (!currentCard.category || !currentCard.question || !currentCard.author || !currentCard.answer) {
                 $("#error-update").html("<p float='right'><strong>Please enter a value for all fields!</strong></p>");
             }
             else {
@@ -251,11 +251,11 @@ function reRender(subject) {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <div class="front row valign-wrapper center-align">
+                    <div class="front valign-wrapper center-align">
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
-                    <div class="back center-align valign-wrapper">
-                    <p class="center-align a "> ${cardArray[i].answer}</p>
+                    <div class="back valign-wrapper center-align">
+                    <p class="center-align a"> ${cardArray[i].answer}</p>
                     </div>
                 </div>
             </label>`);
@@ -264,7 +264,6 @@ function reRender(subject) {
             $("#cardCarousel").append(carouselCard);
         }
         $('.carousel').carousel({
-            //fullWidth: true,
             indicators: true
         });
 
