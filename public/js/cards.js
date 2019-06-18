@@ -10,7 +10,7 @@ $(document).ready(function () {
     $.get("/api/categories", function (dbArray) {
         // take each item and use jQuery to build out the sidebar categories
         for (let i = 0; i < dbArray.length; i++) {
-            $("#sidebarSub").append(`<a href="#!" class="collection-item card-subject" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
+            $("#sidebarSub").append(`<a href="#!" class="collection-item card-subject blue-text" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
         }
     });
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
     $.get("/api/authors", function (dbArray) {
         // take each item and use jQuery to build out the sidebar categories
         for (let i = 0; i < dbArray.length; i++) {
-            $("#sidebarAuth").append(`<a href="#!" class="collection-item card-author" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
+            $("#sidebarAuth").append(`<a href="#!" class="collection-item card-author blue-text" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
         }
     });
 
