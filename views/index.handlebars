@@ -1,7 +1,7 @@
 <!-- Main Content -->
 <!-- Parallex Image 1 -->
-<div class="white-text center-align" style="z-index: 999;">
-    <h1 class="header" style="padding: 0; margin-top: 25px;"><a class="pink-text" href="/"><strong>FlashC</strong><span
+<div id="flashCodes" class="white-text center-align" style="z-index: 999; display: none;">
+    <h1  class="header" style="padding: 0; margin-top: 25px;"><a class="pink-text" href="/"><strong>FlashC</strong><span
                 class="btn-floating btn-large indigo accent-4 pulse valign-wrapper center-align"><i
                     class="medium material-icons pulse flasher">code</i></a><a
             class="pink-text" href="/"></strong>des</strong></a></h1>
@@ -103,3 +103,9 @@
 </footer>
 <!-- End Footer -->
 <div id="extension-is-installed"></div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#flashCodes").show(500);
+    })
+</script>
