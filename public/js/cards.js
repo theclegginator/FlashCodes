@@ -2,6 +2,7 @@ $(document).ready(function () {
     // initialize modals
     $('#updateModal').modal();
     $("#deleteModal").modal();
+    $("#card-icons").hide();
 
     // perform a get request to get a list of subject to build out the sidebar menu
     $.get("/api/categories", function (dbArray) {
@@ -21,7 +22,7 @@ $(document).ready(function () {
 
     //Listening for Subject selection to pull applicable cards from API GET route.
     $("#sidebarSub").on("click", ".card-subject", function () {
-
+        $("#card-icons").show();
         $(".intro").hide();
         $("#cardCarousel").empty();
 
