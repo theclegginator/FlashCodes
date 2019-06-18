@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS flash_codes;
+CREATE DATABASE flash_codes;
