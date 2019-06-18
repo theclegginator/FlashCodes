@@ -2,12 +2,18 @@ body {
   background-color: black;
 }
 
+.top-nav {
+  height: 5rem !important;
+}
+
 header, #main, footer {
   padding-left: 250px !important
 }
 
 .headtime {
   background-color: #EE6E73;
+  height: 10rem;
+  width: 100vw
 }
 
 @media only screen and (max-width : 992px) {
@@ -187,9 +193,9 @@ label:hover :checked + .card {
 }
 
 
-.header :hover{
+/* .header :hover{
   color: rgb(50, 144, 233);
-}
+} */
 
 .header {
   padding-left: 2rem;
@@ -200,5 +206,32 @@ label:hover :checked + .card {
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+
+  .header {
+    font-size: 3rem;
+    width: 100vw
+  }
+
+  .headtime {
+    text-align: center !important;
+    height: 8rem;
+    padding: 1rem;
+  }
+
+  .front {
+    width: 100vw;
+    font-size: smaller;
+  }
+
+  .back {
+    width: 100vw;
+    font-size: smaller;
   }
 }
