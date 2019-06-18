@@ -33,11 +33,8 @@ $(document).ready(function () {
             //console.log("Cards", data);
             renderCards(data)
 
-            //$(".carousel").carousel();
-            $('.carousel').carousel()
-            //fullWidth: true,
-            // indicators: true,
-            // padding: 200
+
+            $('.carousel').carousel();
         });
 
         //Listening for Author selection to pull applicable cards from API GET route.
@@ -73,6 +70,7 @@ $(document).ready(function () {
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
                     <div class="front valign-wrapper center-align">
+                    <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
                     <div class="back center-align valign-wrapper">
@@ -100,10 +98,7 @@ $(document).ready(function () {
                 console.log("Cards", data);
                 renderCards(data)
 
-                $('.carousel').carousel({
-                    //fullWidth: true,
-                    //
-                });
+            $('.carousel').carousel();
 
             });
         });
@@ -249,7 +244,8 @@ $(document).ready(function () {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <div class="front valign-wrapper center-align">
+                <div class="front valign-wrapper center-align">
+                <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
                     <div class="back valign-wrapper center-align">
@@ -257,13 +253,12 @@ $(document).ready(function () {
                     </div>
                 </div>
             </label>`);
-                console.log("Q:", cardArray[i].question)
-                console.log("A:", cardArray[i].answer)
-                $("#cardCarousel").append(carouselCard);
-            }
-            $('.carousel').carousel({
-                indicators: true
-            });
+
+            console.log("Q:", cardArray[i].question)
+            console.log("A:", cardArray[i].answer)
+            $("#cardCarousel").append(carouselCard);
+        }
+        $('.carousel').carousel();
 
         });
     }
