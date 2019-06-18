@@ -4,6 +4,8 @@ $(document).ready(function () {
     $("#deleteModal").modal();
     $("#card-icons").hide();
 
+    $("#fadeIntro").fadeIn(2000);
+
     // perform a get request to get a list of subject to build out the sidebar menu
     $.get("/api/categories", function (dbArray) {
         // take each item and use jQuery to build out the sidebar categories
