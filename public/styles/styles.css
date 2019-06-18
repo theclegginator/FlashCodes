@@ -5,11 +5,14 @@ body {
 header, #main, footer {
   padding-left: 250px !important
 }
+
+.headtime {
+  background-color: #EE6E73;
+}
+
 @media only screen and (max-width : 992px) {
-  header,
-  main,
-  footer {
-      padding-left: 0;
+  header, #main, footer {
+      padding-left: 0px !important
   }
 }
 
@@ -190,8 +193,10 @@ label:hover :checked + .card {
 
 .header {
   padding-left: 2rem;
+  font-size: 90px;
+  padding-bottom: 2rem; 
 }
-  
+
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
