@@ -245,8 +245,8 @@ function reRender(subject) {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
-                    <div class="front valign-wrapper center-align">
+                <div class="front valign-wrapper center-align">
+                <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
                     <div class="back valign-wrapper center-align">
