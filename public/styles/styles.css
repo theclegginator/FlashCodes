@@ -6,7 +6,7 @@ body {
   height: 5rem !important;
 }
 
-header, #main, footer {
+header, #main {
   padding-left: 250px !important
 }
 
@@ -205,6 +205,91 @@ label:hover :checked + .card {
   padding-left: 2rem;
   font-size: 90px;
   padding-bottom: 2rem; 
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-4 {
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    min-height: 100%;
+    opacity: 0.65;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-brain-technology-code-digital-image_6990.jpg");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-2 {
+    background-image: url("https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D6500%252C4800%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1182%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-images%252F2019-03%252F5471ef50-4038-11e9-8eae-17cd782a6149%26client%3Da1acac3e1b3290917d92%26signature%3Dd5735a99c6f84008b0262904b2d6564a503b26e8&client=amp-blogside-v2&signature=8059bb50fa7b7b978aaa53be8079e36b9b21ef40");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.foot {
+  width: 100%;
+}
+
+.card-panel {
+  height: 425px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 23px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 .bgimg-4 {
+        background-attachment: scroll;
+    }
 }
 
 @media only screen and (max-width : 992px) {
