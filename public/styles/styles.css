@@ -56,7 +56,9 @@ header, #main, footer {
       height: 100%;
       width: 100%;
       background: rgb(255, 242, 219);
+      background: #292C33;
       color: black;
+      color: rgb(110, 180, 211);
       text-align: center;
       line-height: 2rem;
       font-size: xx-large;
@@ -68,7 +70,9 @@ header, #main, footer {
 
   .card .back {
       background: lightgreen;
+      background: slategray;
       color: black;
+      color: white;
       text-align: center;
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
