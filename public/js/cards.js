@@ -10,7 +10,7 @@ $(document).ready(function () {
     $.get("/api/categories", function (dbArray) {
         // take each item and use jQuery to build out the sidebar categories
         for (let i = 0; i < dbArray.length; i++) {
-            $("#sidebarSub").append(`<a href="#!" class="collection-item card-subject blue-text" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
+            $("#sidebarSub").append(`<a href="#!" class="collection-item card-subject indigo-text text-accent-4" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
         }
     });
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
     $.get("/api/authors", function (dbArray) {
         // take each item and use jQuery to build out the sidebar categories
         for (let i = 0; i < dbArray.length; i++) {
-            $("#sidebarAuth").append(`<a href="#!" class="collection-item card-author blue-text" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
+            $("#sidebarAuth").append(`<a href="#!" class="collection-item card-author indigo-text text-accent-4" data-id="${dbArray[i].DISTINCT}">${dbArray[i].DISTINCT}</a>`)
         }
     });
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
             <label>
                 <input type="checkbox" class="checker" id="cb${i}" unchecked />
                 <div class="card valign-wrapper center-align" >
-                    <div class="front valign-wrapper center-align">
+                    <div class="front valign-wrapper center-align blue-text text-lighten-3">
                     <p style="position: relative; left: 90%; top: -40%; font-size: large; color: gray;">${i+1}/${cardArray.length}</p>
                     <p class="center-align q">${cardArray[i].question}</p>
                     </div>
@@ -79,7 +79,7 @@ $(document).ready(function () {
                     <p class="center-align a "> ${cardArray[i].answer}</p>
                     </div>
                    
-                        
+    
                 </div>
             </label>`);
                 console.log("Q:", cardArray[i].question)

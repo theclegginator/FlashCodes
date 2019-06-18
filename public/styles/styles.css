@@ -55,9 +55,9 @@ header, #main, footer {
       position: absolute;
       height: 100%;
       width: 100%;
-      background: rgb(255, 242, 219);
+      /* background: rgb(255, 242, 219); */
       background: #292C33;
-      color: black;
+      /* color: black; */
       color: rgb(110, 180, 211);
       text-align: center;
       line-height: 2rem;
@@ -69,9 +69,9 @@ header, #main, footer {
   }
 
   .card .back {
-      background: lightgreen;
-      background: slategray;
-      color: black;
+      /* background: lightgreen; */
+      background: rgb(81, 90, 100);
+      /* color: black; */
       color: white;
       text-align: center;
       -webkit-transform: rotateY(180deg);
@@ -153,11 +153,11 @@ label:hover :checked + .card {
 }
 
 .fa-pencil-alt, .fa-times-circle {
-  color: #EE6E73;
+  color: #e91e63;
   padding: 20px;
 }
 .fa-pencil-alt:hover, .fa-times-circle:hover {
-  color: rgb(211, 128, 131);
+  color: #ad1457;
 }
 
 .fa-sticky-note {
