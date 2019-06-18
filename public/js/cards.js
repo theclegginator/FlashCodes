@@ -27,7 +27,7 @@ $(document).ready(function () {
         $("#card-icons").show();
         $(".intro").hide();
         $("#cardCarousel").empty();
-
+        
         let subject = $(this).data("id");
         console.log("Subject:", subject)
 
