@@ -1,21 +1,24 @@
 <!-- Main Content -->
 <!-- Parallex Image 1 -->
-<div id="flashCodes" class="white-text center-align" style="z-index: 999; display: none;">
-    <h1  class="header" style="padding: 0; margin-top: 25px;"><a class="pink-text" href="/"><strong>FlashC</strong><span
-                class="btn-floating btn-large indigo accent-4 pulse valign-wrapper center-align"><i
-                    class="medium material-icons pulse flasher">code</i></a><a
-            class="pink-text" href="/"></strong>des</strong></a></h1>
+<div id="flashCodes" class="white-text center-align" style="display: none;">
+    <h1 class="header" style="padding: 0; margin-top: 25px;"><a class="pink-text" href="/">FlashC</a><span
+            class="btn-floating btn-large indigo accent-4 pulse valign-wrapper center-align"><i
+                class="medium material-icons pulse flasher">code</i></span><a class="pink-text" href="/">des</a></h1>
     {{!-- <h3 class="captiontag red-text text-lighten-5 center-align">Study in &ltstyle&gt </h3> --}}
 </div>
-<div class="bgimg-1">
-    <div class="container">
-        <div class="row">
-        </div>
-    </div>
+<div class="bgimg-1 center-align">
+
+    <a href="#starter" class="goto-next scrolly downflash " style="z-index: 9999;"><span
+            class="btn-floating btn-large pink center-align valign-wrapper downward"><i
+                class="medium material-icons downward">arrow_downward</i></span></a>
+
 </div>
-<div class="indigo accent-4 " style="padding:50px 80px;text-align: center;">
+
+
+<div class="indigo accent-4 " style="padding:50px 80px;text-align: center;" id="starter">
     <a href="/cards" class="pink red-text text-lighten-5 waves-effect waves-light btn-large"><i
             class="material-icons left">school</i>Get Started Today!</a> </div>
+
 </div>
 <!-- Intro to Flashcodes -->
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
@@ -60,7 +63,8 @@
             <p class="z-depth-5"></p>
             <div class=" card-panel indigo accent-4  hoverable">
                 <h2 class="center pink-text">
-                    <a class="btn-floating btn-large pink pulse" href="/cards"><i class="material-icons">developer_mode</i></a>
+                    <a class="btn-floating btn-large pink pulse" href="/cards"><i
+                            class="material-icons">developer_mode</i></a>
                     <br>
                 </h2>
                 <h3 class="white-text center">Learn Faster</h3>
@@ -75,7 +79,8 @@
             <p class="z-depth-5"></p>
             <div class=" card-panel indigo accent-4  hoverable">
                 <h2 class="center pink-text">
-                    <a class="btn-floating btn-large pink pulse" href="/cards"><i class="material-icons">import_contacts</i></a>
+                    <a class="btn-floating btn-large pink pulse" href="/cards"><i
+                            class="material-icons">import_contacts</i></a>
                     <br>
                 </h2>
                 <h3 class="white-text center">Study Smarter</h3>
@@ -107,5 +112,9 @@
 <script>
     $(document).ready(function () {
         $("#flashCodes").show(500);
+        $('.scrolly').scrolly({
+            speed: 100
+        });
+
     })
 </script>
