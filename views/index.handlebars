@@ -8,9 +8,9 @@
 </div>
 <div class="bgimg-1 center-align">
 
-    <a href="#starter" class="goto-next scrolly downflash " style="z-index: 9999;"><span
-            class="btn-floating btn-large pink pulse center-align valign-wrapper downward"><i
-                class="medium material-icons downward">arrow_downward</i></span></a>
+    <a class="goto-next scrolly downflash"><span
+            class="btn-floating btn-large pink pulse center-align valign-wrapper" id="downward"><i
+                class="medium material-icons" id="go-down">arrow_downward</i></span></a>
 
 </div>
 
@@ -112,8 +112,13 @@
 <script>
     $(document).ready(function () {
         $("#flashCodes").show(500);
-        $('.scrolly').scrolly({
-            speed: 100
+        
+        $("#downward").click(function () {
+           // $('html,body').scrollTo("#starter")
+            $('html,body').animate({
+                scrollTop: $("#starter").offset().top
+            },
+                2000);
         });
 
     })
