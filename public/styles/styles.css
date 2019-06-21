@@ -2,6 +2,27 @@ body {
   background-color: black;
 }
 
+/* .scrolly {
+-moz-transition: background-color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+} */
+
+.downflash {
+  position:absolute;
+  bottom: 11rem;
+  text-align: center;
+  margin-left: -28px;
+  
+
+}
+
+.downward {
+  text-align: center;
+
+}
+
 .top-nav {
   height: 5rem !important;
 }
@@ -241,7 +262,6 @@ html {
     background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-brain-technology-code-digital-image_6990.jpg");
     min-height: 100%;
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
