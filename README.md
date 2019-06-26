@@ -30,6 +30,7 @@ Choose from content created by other users or create your own flashcards for cus
 
 * [Node.js](https://nodejs.org/)- evented I/O for the backend
 * [JavaScript](https://www.javascript.com/)
+* [Materialize](https://materializecss.com/)
 * [NPM](https://www.npmjs.com/) - Package manager
 * [Express](https://www.expressjs.com/)
 * [Agile](https://www.agile.com/)
