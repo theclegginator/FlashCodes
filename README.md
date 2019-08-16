@@ -8,7 +8,6 @@ https://flashcodes.herokuapp.com/
 
 * [General info](#general-info)
 * [Features](#features)
-* [Examples](#examples)
 * [Technologies](#technologies)
 
 
@@ -16,20 +15,37 @@ https://flashcodes.herokuapp.com/
 
 Flashcodes is an online study resource that helps students learn coding concepts quickly with the help of interactive flashcards. Thanks to our interactive study community, users have generated content about need-to-know terminology, interview questions and code snippets complete with definitions and answers. We have material on many topics including HTML, CSS, Javascript, SQL, and more! Traditional study materials such as online articles and textbooks are helpful, but don’t help you retain information and recall for later use. With the help of FlashCodes, you can boost your coding knowledge and become a better developer today!
 ## Features
-### Study Anywhere
-Create, share, and study code on the go using any device. You can use FlashCodes on mobile, tablet, and desktop and pick up where you left off when switching devices. This gives coders the flexibility to learn and develop their skills constantly.
-### Learn Faster
-By utilizing flashcards, you can retain information faster and start applying what you learn to your projects right away! Practicing what you learn is a key part of the learning process. With FlashCode, users can recall code faster and implement to develop smarter applications.
-### Study Smarter
-Choose from content created by other users or create your own flashcards for customized learning of a variety of different programming languages. FlashCode’s simple tools can help students upload code snippets and effectively break them down to understand each segment.
+### Review Flash Cards
+* The FlashCodes card engine makes it easy to flip through and study individual cards.
+* The carousel is fully touch responsive for mobile use.
+
+![Screenshot](README-images/flashcard-engine.gif)
+
+### Create New Cards
+* Creating new cards is quick and easy. Simply hit the "Create Cards" button at the top of the screen, select a category for the card, and fill out the question, answer, and author fields.
+
+![Screenshot](README-images/create-card.gif)
+
+### Update or Delete Existing Cards
+* Hit the update card button located at the button of the screen to fix a mistake or modify an answer.
+* Hit the delete button to remove a card entirely. A modal will appear, asking you to confirm.
+
+![Screenshot](README-images/update-example.gif)
+![Screenshot](README-images/delete-example.gif)
+
+### Filter Cards by Subject or Author
+* If you want to study one subject on FlashCodes, simply hit the subject heading on the menu bar to the left.
+* If you'd rather review only the cards you've made yourself, you can filter cards by author on the bottom left.
+
+![Screenshot](README-images/author-example.gif)
 
 ## Technologies
 
-* [Node.js](https://nodejs.org/)- evented I/O for the backend
+* [Node.js](https://nodejs.org/)- event I/O for the backend
 * [JavaScript](https://www.javascript.com/)
-* [Materialize](https://materializecss.com/)
+* [Materialize](https://materializecss.com/) - UI Framework for this project
 * [NPM](https://www.npmjs.com/) - Package manager
-* [Express](https://www.expressjs.com/)
+* [Express](https://www.expressjs.com/) - Server management
 * [Agile](https://www.agile.com/)
-* [Sequelize](https://www.sequilize.com/)
-* [MySql](https://www.mysql.com/)
+* [Sequelize](https://www.sequilize.com/) - ORM for SQL Management
+* [MySql](https://www.mysql.com/) - SQL Format
